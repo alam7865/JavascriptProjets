@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Object</title>
+
+		<script>
+			
+			let a={
+				fname:'Sabaz',
+				lname:'Alam',
+				age:18,
+				country:'India',
+				movies:['Dhoom','hero','Dragon'],
+				salary:function(){
+					return 25000
+				},
+
+				fullname:function(){
+
+					return	this.fname + " " + this.lname
+				},
+
+				living:{
+					'city':'chandigarh',
+					'country':'India',
+				},
+				
+			};
+
+			console.log(a);
+
+			document.write(a.movies);
+
+			document.write("<br>","<br>");
+
+			document.write(a.salary());
+
+			document.write(a.fullname());
+
+			document.write("<br>","<br>");
+
+			document.write(a.living.country);
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+	</body>
+
+</html>

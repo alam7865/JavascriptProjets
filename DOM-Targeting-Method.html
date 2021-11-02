@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Basic Css Html Layout</title>
+        <!-- <link rel="stylesheet" href="./css/main.css"> -->
+        <!-- <script src="js/dom-main.js"></script> -->
+		<style>
+
+		:root{
+			--main-color:crimson;
+		}
+			body{
+				font-family:arial;
+				background:slategray;
+				padding:0;
+				margin:0; 
+			}
+
+			#wrapper{
+				border:0px solid black;
+				background-color:white;
+				width:1000px;
+				margin-top:0px;
+				margin:0 auto; 
+			}
+
+			/* setAttribute; */
+			.abc{
+				color:yellow;
+			}
+			#header{
+				/* background:var(--main-color); */
+				height:100px; 
+			}
+
+			#header h1{
+				padding:30px 0 0 20px;
+				/* color:white; */
+				margin:0;
+			}
+
+			#menu{
+				background:lightsalmon; 
+			}
+
+			#menu li{
+				display:inline-block;
+			}
+
+			#menu li a{
+				display:block;
+				padding:10px 13px;
+				text-decoration:none;
+				color:black; 
+			}
+
+			#menu li a:hover{
+				background-color:red;
+				color:white; 
+			}
+
+			#menu ul{
+				margin:0;
+				padding:0;
+			}
+
+			#contect{
+				width:800px;
+				float:left;
+				min-height:500px;
+				padding:15px;
+				--main-color:black;
+				color: var(--main-color);
+				box-sizing:border-box;  
+			}
+
+			#sidebar{
+				background:lightblue;
+				width:200px;
+				min-height:500px; 
+				float:right;
+
+				
+			}
+
+			#sidebar a{
+				text-decoration:none;
+				color:black;
+
+			}
+
+			#fotter{
+				background:var(--main-color);
+				clear:both; 
+				padding:5px 10px;
+				text-align:right;
+			}
+
+
+			@media screen and (max-width:1020px ){
+				#wrapper{
+					width:800px;
+				}
+			}
+
+			#contect{
+				width:80%;
+			}
+
+			#sidebar{
+				width:18%; 
+			}
+
+
+			@media screen and (max-width:810px ){
+				#wrapper{
+					width:500px;
+				}
+
+
+				#contect{
+				width:65%;
+
+			}
+
+			#sidebar{
+					width:30%;
+			        }
+			}
+
+
+			@media screen and (max-width:510px ){
+				#wrapper{
+					width:auto;
+				}
+
+				#contect{
+				width:100%;
+				float:none;
+			}
+
+			#sidebar{
+					width:100%;
+					float:none;
+			        }
+
+			        #header h1{
+				padding:30px 0 0 0;
+				color:white;
+				margin:0;
+				text-align:center; 
+			}
+			}
+		</style>
+
+	</head>
+
+
+
+	<body>
+		<div id="wrapper">
+			<div id="header"  class="abc"  style="border:1px solid black" onClick="hello()">
+				<h1>Sabaz Alam</h1>
+			</div>
+
+
+			<div id="menu">
+				<!-- <div class="menu"></div> -->
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">Contect us</a></li>
+				</ul>
+			</div>
+			<div id="contect">
+				<h2>Design Basic Layout</h2>
+				<!-- <p class="menu">Lorem ipsum dolor sit amet consectetur adipisicing  -->
+
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing 
+
+ 				   elit. Necessitatibus dignissimos beatae itaque. Non
+ 				   unde sunt accusantium esse nobis delectus temporibus
+ 				   repudiandae possimus ipsam ut eligendi mollitia 
+ 				   voluptas corrupti architecto, doloribus labore 
+ 				   commodi eaque quas? Maiores at perspiciatis quis 
+ 				   tenetur! Fugit, nemo. Iusto reiciendis deserunt 
+ 				   ducimus accusamus adipisci modi ullam impedit veniam </p>
+				<p>
+					                 Accusantium labore saepe enim
+ 					suscipit cupiditate deserunt doloribus accusamus 
+ 					minima cumque dolorem molestiae. Eos quisquam, 
+ 					cumque sunt corrupti exercitationem ipsam numquam 
+ 					explicabo soluta doloribus, saepe enim necessitatibus
+ 					quaerat optio fuga reiciendis iusto harum dicta hic 
+ 					nemo excepturi voluptate eveniet dolorum. Id rem 
+ 					consectetur laborum eos alias omnis voluptatibus non.
+				</p>
+			</div>
+			<div id="sidebar">
+				<li><a href="">Home</a></li>
+				<li><a href="">About us</a></li>
+				<li><a href="">Gallery</li>
+				<li><a href="">Contect us</a></li>
+			</div>
+			<div id="fotter">
+				<p>
+					Sabazalam@copyright2021
+				</p>
+			</div>
+		</div>
+
+	</body>
+    <script src="../js/main.js"></script>
+</html>
+

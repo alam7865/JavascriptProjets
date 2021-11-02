@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+   <script>
+   	
+   // let a = ["sohail", "sony", "sabaz"];
+
+
+   //  document.write(a[2]);
+
+
+
+  let ary = [
+         
+        ["Name", "class", "rollNo", "sec"],
+        ["sohail", 7,       8,       "A"],
+        ["sony",   9,       3,       "B"],
+        ["hu",     39,      20,	    "C" ]
+];
+
+// document.write(ary[2][0]);
+
+  document.write(`<table border = '1px solid black' cellspacing='10px' cellpadding = '5px'`);
+
+  for(let a=0; a<ary.length; a++){
+  	document.write("<tr>")
+      for(let b=0; b<ary[a].length; b++){
+      	document.write(`<td>${ary[a][b]}<br></td>`)
+      }
+  	document.write("</tr>")
+  }
+
+  document.write("</table>");
+
+   </script>
+
+</body>
+</html>
